@@ -30,4 +30,5 @@ export const AGENT_OF_MONTH_EDIT_ROUTE = "/agentOfMonth/:id/edit";
 export const COMPANY_ROUTE = "/company";
 export const TEAM_ROUTE = "/team";
 export const SERVICE_ROUTE = "/service";
+export const CART_ROUTE = "/cart";
 

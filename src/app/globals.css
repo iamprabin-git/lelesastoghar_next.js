@@ -36,3 +36,36 @@ body {
   margin: 0 auto;
   padding: 5;
 }
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light mode */
+body {
+  @apply bg-white text-black;
+}
+
+/* Dark mode */
+.dark body {
+  @apply bg-[#1e293b] text-white;
+}

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 "use client";
 
 import { useDispatch } from "react-redux";
@@ -26,32 +26,4 @@ function AuthUser({ user }) {
 }
 
 export default AuthUser;
-=======
-"use client";
 
-import { useDispatch } from "react-redux";
-import { FaUserTie } from "react-icons/fa";
-import { useState } from "react";
-import AuthUserPopup from "./AuthUserPopup";
-
-function AuthUser({ user }) {
-    const [showPopup, setShowPopup] = useState(false);
-  const dispatch = useDispatch();
-  return (
-    <div className="relative">
-      <button className="border-3 p-2 rounded-full cursor-pointer"
-      onClick={() => setShowPopup(!showPopup)}>
-        <FaUserTie />
-      </button>
-      {showPopup && (
-      <AuthUserPopup user={user} setShowPopup={setShowPopup}/>
-          
-      )}
-      
-      
-    </div>
-  );
-}
-
-export default AuthUser;
->>>>>>> dff7259d9c648c2ed6ef28607dacf6d55f73aca2
